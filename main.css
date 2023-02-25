@@ -47,6 +47,7 @@ td{
     width: auto;
     height: auto;
 }
+
 .button-64 {
   align-items: center;
   background-image: linear-gradient(144deg,#006CB8, #42F37B 50%,#9FDD49);
@@ -103,3 +104,14 @@ td{
 .head2{
     text-align: center;
 }
+
+.podcast{
+    text-align: center;
+    font-weight: bold;
+}
+
+.sponsorship{
+    text-align: center;
+    font-weight: bold;
+}
+
