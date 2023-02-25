@@ -135,3 +135,19 @@ td{
     text-align: center;
     font-weight: bold;
 }
+
+.github-prompt{
+    text-align: center;
+    font-weight: bold;
+}
+
+.git img{
+    max-height: 150px;
+    max-width: 200px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
