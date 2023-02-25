@@ -4,8 +4,8 @@ td{
 }
 
 .image img{
-    width: 100%;
-    height: auto;
+    width: 35em;
+    height: 18em;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -13,7 +13,7 @@ td{
     /* object-fit: fill; */
 }
 
-.intro {
+.intro{
     font-weight: bold;
     text-align: center;
 }
