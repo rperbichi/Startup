@@ -115,3 +115,23 @@ td{
     font-weight: bold;
 }
 
+.mail-text{
+    text-align: center;
+    font-weight: bold;
+}
+
+.mail img{
+    max-height: 150px;
+    max-width: 200px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.devo{
+    text-align: center;
+    font-weight: bold;
+}
