@@ -14,14 +14,42 @@ td{
 }
 
 .intro {
-    font-family: 'San Francisco', Helvetica, Arial, san-serif;
-    color:black;
+    font-weight: bold;
     text-align: center;
 }
 
+.menu{
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+.current{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.redirect{
+    text-align: center;
+    font-weight: bold;
+}
+
+.book-description{
+    text-align: center;
+    font-weight: bold;
+}
+
+.book{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
 .button-64 {
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg,#006CB8, #42F37B 50%,#9FDD49);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -66,4 +94,12 @@ td{
     font-size: 24px;
     min-width: 196px;
   }
+}
+
+.head{
+    text-align: center;
+}
+
+.head2{
+    text-align: center;
 }
