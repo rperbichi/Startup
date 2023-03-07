@@ -3,14 +3,16 @@ td{
     padding: 20px;
 }
 
+head {
+    display: flex;
+    flex-direction: row;
+}
+
 .image img{
-    width: 35em;
-    height: 18em;
-    display: block;
+    width: 5em;
+    height: 5em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0.5em;
-    /* object-fit: fill; */
 }
 
 .intro{
