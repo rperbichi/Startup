@@ -3,6 +3,16 @@ td{
     padding: 20px;
 }
 
+.tabs-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(82, 175, 218);
+    border-radius: 6px;
+}
+
 head {
     display: flex;
     flex-direction: row;
@@ -22,9 +32,13 @@ head {
 }
 
 .menu{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
     text-align: center;
     height: auto;
     width: auto;
+    flex-direction: row;
 }
 
 .home-button{
@@ -107,6 +121,10 @@ head {
     min-width: 196px;
   }
 }
+
+
+/* home tabs------------------------------------ */ 
+
 
 .head{
     text-align: center;
