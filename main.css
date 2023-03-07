@@ -9,10 +9,11 @@ head {
 }
 
 .image img{
-    width: 5em;
-    height: 5em;
+    text-align: left;
+    width: 25em;
+    height: 15em;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 
 .intro{
@@ -24,6 +25,14 @@ head {
     text-align: center;
     height: auto;
     width: auto;
+}
+
+.home-button{
+    background-image: linear-gradient(144deg,#006CB8, #006CB8 50%,#006CB8);
+    height: auto;
+    width: 50px;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .current{
@@ -152,4 +161,9 @@ head {
     margin: auto;
     justify-content: center;
     text-align: center;
+}
+
+.home-image img{
+    height: 350px;
+    width: auto;
 }
