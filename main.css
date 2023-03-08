@@ -3,15 +3,6 @@ td{
     padding: 20px;
 }
 
-.tabs-list {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(82, 175, 218);
-    border-radius: 6px;
-}
 
 head {
     display: flex;
@@ -39,6 +30,8 @@ head {
     height: auto;
     width: auto;
     flex-direction: row;
+    background-color: rgb(82, 175, 218);
+    border-radius: 6px;
 }
 
 .home-button{
