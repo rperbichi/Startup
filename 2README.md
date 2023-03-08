@@ -1032,3 +1032,77 @@ boy = ["female", "xy chromosomes"];
 
 console.log(boy); //returns (2) [‘female’, ‘xy chromosomes’]
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+does <div> do? Creates a division element
+What does <b> do? Bring attention
+To point to another DNS record, you should use the following DNS record type: CNAME //Its an alias, or a pointer to another record
+Can you use CSS to load fonts from Google? True. //
+Valid JSON {“x”:3} 
+How would you turn only the BYU text blue? Div.header {color: blue;} 
+Which of the following is not a valid way to include JavaScript in HTML? <javascript>1+1</javascript>
+What does the following code output?
+Let a = [‘cow’, ‘rat’, ‘fish’];
+Let b = a.filter(v => v.match(/A|f/i)); //i stands for incase sensitive. Anything with an a or i will work.
+console.log(b);
+//RETURNS [‘rat’,’fish’]
+Which of the following is not a valid JavaScript function? functionf(x) = {} //because if you already say function, the weird equal sign doesn’t make sense
+ The CSS property padding: (think  C Pals Before Marriage) 
+ What is the order of the CSS box model? content, padding, border, margin
+ What’s the HTML tag for an unordered list? <ul> 
+ Which HTML will create a valid hyperlink? <a href=’https://c.com’>x</a>
+ What does it output? 
+Let a = [1, 2, 3];
+Let e = a.map(number => {
+	Return (‘a’ + number)
+});
+console.log(e);
+//RETURNS [‘a1’,’a2’,’a3’]
+ What will the following output? 
+Const a = async function() {
+	Return new Promise((resolve, reject) => {
+		setTimeout(() => {console.log(‘D’); resolve(true)}, 10000);
+	})
+}
+
+Try {
+	console.log(‘A’);
+	Await a();  //will wait for the Promise to show up before continuing.
+	console.log(‘B’)
+} catch(e) {
+	console.log(‘C’);
+}
+//RETURNS A D B
+What does the DOM textContent property do? Sets the child text for the an element. 
+ Which of the following is a DNS subdomain? C260.cs.byu.edu // the whole thing is a subdomain, not just the thing on the end
+ Column-reverse means take all of the elements and flip them upside down.
+Executing the following will output:
+Const f = y => ++y;
+console.log(f(3))
+//RETURNS 4
+Which of the following is valid JavaScript object? {n:1} //never use an equal sign for objects, only colons
+The following console command makes a script executable: chmod +x deploy.sh
+
+
+
+
+
+
+To do:
+Learn JavaScript Promises.
+Const p = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		console.log(‘taco’);
+		resolve(true);
+	}, 10000);
+});
+console.log(‘burger’);
+
+P
+.then((result) => console.log(‘shake’))
+.catch((e) => console.log(‘salad’))
+.finally(() => console.log(‘noodles’))
+
+console.log(‘fires’);
+
+To do: Learn reduce, sum, filter
+To do: How to include JavaScript in HTML (see problem 7)
