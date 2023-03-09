@@ -4,15 +4,17 @@ td{
 }
 
 
+
 head {
     display: flex;
     flex-direction: row;
 }
 
 .image img{
-    text-align: left;
-    width: 25em;
-    height: 15em;
+
+    display: block;
+    width: 50%;
+    height: 50%;
     margin-left: auto;
     margin-right: auto; 
 }
@@ -106,6 +108,12 @@ head {
 
 .button-64:hover span {
   background: none;
+  background-color: rgb(82, 175, 218);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
 }
 
 @media (min-width: 768px) {
@@ -117,7 +125,35 @@ head {
 
 
 /* home tabs------------------------------------ */ 
+.button-65:active,
+.button-65:hover {
+    transition: 300ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    align-items: center;
+    background-image: linear-gradient(144deg,#006CB8, #42F37B 50%,#9FDD49);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    
+}
 
+@media (min-width: 768px) {
+    .button-65 {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
 
 .head{
     text-align: center;
