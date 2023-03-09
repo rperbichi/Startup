@@ -12,9 +12,9 @@ head {
 
 .image img{
 
-    display: block;
-    width: 50%;
-    height: 50%;
+    display: flex;
+    width: 70%;
+    height: auto;
     margin-left: auto;
     margin-right: auto; 
 }
