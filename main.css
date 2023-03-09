@@ -126,6 +126,9 @@ head {
 
 
 /* home tabs------------------------------------ */ 
+.button-65 {
+    font-size: 100%;
+}
 .button-65:active,
 .button-65:hover {
     transition: 300ms;
@@ -153,6 +156,12 @@ head {
     .button-65 {
         font-size: 24px;
         min-width: 196px;
+    }
+} 
+
+@media (max-width: 414px) {
+    .button-65 {
+        flex-direction: column;
     }
 }
 
