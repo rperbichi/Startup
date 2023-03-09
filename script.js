@@ -17,3 +17,4 @@ function promptMe(){
     var userAdjective = prompt("Enter email address");
     alert (userAdjective);
 }
+
