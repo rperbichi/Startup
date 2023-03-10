@@ -28,6 +28,9 @@ function prayerRequest(){
     console.log(message)
 }
 
+
+
+
 function coopyURL(){
 
     // we need to allow the link to be copied when the user clicks on it
