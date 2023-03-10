@@ -11,6 +11,16 @@ function promptMe(){
 }
 
 function prayerRequest(){
+    var personName = prompt("Enter name of the person we are praying for:")
+    alert(personName);
+    var message = prompt("Tell us about what we are praying for:");
+    alert(message);
+    // FIXME
+}
+
+function shareLink(){
     
 }
+
+
 
