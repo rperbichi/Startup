@@ -5,19 +5,30 @@
 //document.querySelector('div[class="contact-logo"]').click(prompt("Enter email address"));
 //let ageQuestion = prompt("Enter email address");
 
+
+//asking user for an email address on contact.html
 function promptMe(){
-    var userAdjective = prompt("Enter email address:");
+    let userAdjective = prompt("Enter email address:");
     alert (userAdjective);
+    console.log("Email address entered:\n")
+    console.log(userAdjective)
 }
 
+
+//user submitting a prayer request on contact.html
 function prayerRequest(){
-    var personName = prompt("Enter name of the person we are praying for:")
+    let personName = prompt("Who are we praying for?")  //question 1
     alert(personName);
-    var message = prompt("Tell us about what we are praying for:");
+    let message = prompt("Tell us about what we are praying for:"); //question 2
     alert(message);
     // FIXME
+    console.log("Praying for:\n")
+    console.log(personName)
+    console.log("Prayer Reason:\n")
+    console.log(message)
 }
 
 function coopyURL(){
+
     // we need to allow the link to be copied when the user clicks on it
 }
