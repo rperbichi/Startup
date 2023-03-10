@@ -18,9 +18,6 @@ function prayerRequest(){
     // FIXME
 }
 
-function shareLink(){
-    
+function coopyURL(){
+    // we need to allow the link to be copied when the user clicks on it
 }
-
-
-
