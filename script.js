@@ -29,6 +29,16 @@ function prayerRequest(){
 }
 
 
+//When clicking on the share icon, it copies a link of the website to the user's clipboard
+// function copyMe() {
+    
+// }
+
+var copyShareButton = document.querySelector("#foo\\:bar");
+
+copyShareButton.addEventListener('click', function(event) {
+  copyTextToClipboard("https://startup.worldwideunified.org/");
+});
 
 
 function coopyURL(){

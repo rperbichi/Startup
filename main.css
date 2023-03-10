@@ -210,6 +210,11 @@ head {
     text-align: center;
 }
 
+.share-logo img {
+    width: 100px;
+    height: 100px;
+}
+
 .devo{
     text-align: center;
     font-weight: bold;
