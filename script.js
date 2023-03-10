@@ -1,6 +1,3 @@
-// prayer request option under contact us tab:
-// https://mailtrap.io/blog/javascript-send-email/
-
 // share button -> copies the link to the facebook group
 
 // const el = document.querySelector(".myclass");
@@ -9,7 +6,7 @@
 //let ageQuestion = prompt("Enter email address");
 
 function promptMe(){
-    var userAdjective = prompt("Enter email address");
+    var userAdjective = prompt("Enter email address:");
     alert (userAdjective);
 }
 
