@@ -6,6 +6,7 @@ function loadPrayers() {
     }
   
     const tableBodyEl = document.querySelector('#name');
+    const messageE1 = document.querySelector('#info');
   
     if (scores.length) {
       for (const [i, score] of scores.entries()) {
