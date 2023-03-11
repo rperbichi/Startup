@@ -44,18 +44,19 @@
     <main>
       <div class="podcast">
         <h1>List of Prayer Requests</h1>
-        <p>Enter the information below:</p>
       </div>
-      <div class="prayer-info">
-        <input type="text" id="name" placeholder="Who to pray for?" />
-      </div>
-      <br />
-      <div class="prayer-info">
-        <input type="text" id="name" placeholder="What are we praying for?" />
-      </div>
-      <br/>
-      <div class="submission">
-        <button class="submit-button" onclick="loadPrayers()">Submit</button>
+      <div class="container-fluid bg-secondary text-center">
+        <table class="table table-warning table-striped-columns">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Score</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="scores"></tbody>
+        </table>
       </div>
     </main>
   </body>

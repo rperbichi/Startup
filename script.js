@@ -5,7 +5,7 @@ function loadPrayers() {
       scores = JSON.parse(scoresText);
     }
   
-    const tableBodyEl = document.querySelector('#scores');
+    const tableBodyEl = document.querySelector('#name');
   
     if (scores.length) {
       for (const [i, score] of scores.entries()) {
