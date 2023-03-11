@@ -1,8 +1,8 @@
 function loadPrayers() {
-    let scores = [];
-    const scoresText = localStorage.getItem('scores');
+    let prayers = [];
+    const scoresText = localStorage.getItem('prayer');
     if (scoresText) {
-      scores = JSON.parse(scoresText);
+      prayers = JSON.parse(prayersText);
     }
   
     const tableBodyEl = document.querySelector('#name');
