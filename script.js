@@ -1,30 +1,39 @@
-// //asking user for an email address on contact.html
-// function promptMe(){
-//     let userAdjective = prompt("Enter email address:");
-//     alert (userAdjective);
-//     console.log("Email address entered:\n")
-//     console.log(userAdjective)
-// }
-
-
-// //user submitting a prayer request on contact.html
-// function prayerRequest(){
-//     let personName = prompt("Who are we praying for?")  //question 1
-//     alert(personName);
-//     let message = prompt("Tell us about what we are praying for:"); //question 2
-//     alert(message);
-//     // FIXME
-//     console.log("Praying for:\n")
-//     console.log(personName)
-//     console.log("Prayer Reason:\n")
-//     console.log(message)
-// }
-
-function login() {
-    const nameEl = document.querySelector('#name');
-    localStorage.setItem('userName', nameEl.value);
-    window.location.href = 'prayer.html';
-}
+function loadPrayers() {
+    let scores = [];
+    const scoresText = localStorage.getItem('scores');
+    if (scoresText) {
+      scores = JSON.parse(scoresText);
+    }
+  
+    const tableBodyEl = document.querySelector('#scores');
+  
+    if (scores.length) {
+      for (const [i, score] of scores.entries()) {
+        const positionTdEl = document.createElement('td');
+        const nameTdEl = document.createElement('td');
+        const scoreTdEl = document.createElement('td');
+        const dateTdEl = document.createElement('td');
+  
+        positionTdEl.textContent = i + 1;
+        nameTdEl.textContent = score.name;
+        scoreTdEl.textContent = score.score;
+        dateTdEl.textContent = score.date;
+  
+        const rowEl = document.createElement('tr');
+        rowEl.appendChild(positionTdEl);
+        rowEl.appendChild(nameTdEl);
+        rowEl.appendChild(scoreTdEl);
+        rowEl.appendChild(dateTdEl);
+  
+        tableBodyEl.appendChild(rowEl);
+      }
+    } else {
+      tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to score</td></tr>';
+    }
+  }
+  
+  loadPrayers();
+  
 
 
 
