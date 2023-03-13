@@ -47,7 +47,7 @@ Playing around with the example file made me have a better understanding of how 
     - How to match gradient colors by looking at the HEX value of each one of them.
     - Under the contact us page, we created an image that reacts to the click by opening an email prompt.
     
-    #Simon JavaScript Notes:
+# Simon JavaScript Notes:
     - JSON: JavaScript Object Notation.
     - windon.location.href -> location where you can find the window for the input.
     - document.createElement() -> creates HTML element.
