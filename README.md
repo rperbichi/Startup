@@ -46,6 +46,14 @@ Playing around with the example file made me have a better understanding of how 
     - How to open a new tab when clicking a link. 
     - How to match gradient colors by looking at the HEX value of each one of them.
     - Under the contact us page, we created an image that reacts to the click by opening an email prompt.
+    
+    #Simon JavaScript Notes:
+    - JSON: JavaScript Object Notation.
+    - windon.location.href -> location where you can find the window for the input.
+    - document.createElement() -> creates HTML element.
+    - .this -> object being used in the current piece of the code. 
+    - Using async in some portions of the game.
+    - await gets the value from a promise fulfillment.
     - How to center text and images. 
     - How to  center text and images.
     - How to acces images from GitHub.
