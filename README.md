@@ -66,3 +66,13 @@ Playing around with the example file made me have a better understanding of how 
     - We use fetch to return the value from the server.
     - Service makes the application dynamic. 
     - Exchange data between applications and systems. 
+
+# Simon DB:
+
+    - Databases are used to store and organize data.
+    - A database is a collection of information.
+    - Provides a central place for information.
+    - Benefits of databases:
+        - Reliability.
+        - Accessibility.
+        - Security.
