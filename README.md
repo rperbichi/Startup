@@ -76,3 +76,10 @@ Playing around with the example file made me have a better understanding of how 
         - Reliability.
         - Accessibility.
         - Security.
+
+# Simon Login:
+    
+    - Mongo is used to store user data.
+    - For simon, we need to return some of the user's information to the scores tab.
+    - new MongoClient(url) -> creates a new mongo object.
+    - DetMe -> data retrieval. 
