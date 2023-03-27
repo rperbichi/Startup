@@ -48,6 +48,7 @@ Playing around with the example file made me have a better understanding of how 
     - Under the contact us page, we created an image that reacts to the click by opening an email prompt.
     
 # Simon JavaScript Notes:
+
     - JSON: JavaScript Object Notation.
     - windon.location.href -> location where you can find the window for the input.
     - document.createElement() -> creates HTML element.
@@ -58,3 +59,10 @@ Playing around with the example file made me have a better understanding of how 
     - How to  center text and images.
     - How to acces images from GitHub.
     - GitHub repository link is under the "Contact Us" tab.
+
+# Simon Service Notes:
+
+    - When we use endpoints, we can use operation provided by the service we are wanting to use.
+    - We use fetch to return the value from the server.
+    - Service makes the application dynamic. 
+    - Exchange data between applications and systems. 
