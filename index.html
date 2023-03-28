@@ -1,17 +1,16 @@
 <link rel="stylesheet" href="main.css" />
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <!-- Tell browsers not to scale the viewport automatically -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--switch href out for the WWU logo-->
-  <link rel="icon" href="WWU logo.jpg" />
-  <script src="script.js" defer></script>
-  <script src="login.js" defer></script>
-</head>
-<body>
-  <header>
-    <menu class = menu>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Tell browsers not to scale the viewport automatically -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--switch href out for the WWU logo-->
+    <link rel="icon" href="WWU logo.jpg" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <menu class = menu>
       <!-- <table style="border-bottom-right-radius: 0cqmin;"> -->
           <!-- <tr> -->
             <div class="button-65"><a href="index.html">Home </a></div>
@@ -26,57 +25,58 @@
         <img alt = "Banner" src = "https://github.com/rperbichi/Startup/blob/main/WWU%20banner.jpeg?raw=true"/>
       </div> 
 
-    <p class="intro">
-      We are a Worldwide, interfaith community whose mission is to be Unified in
-      helping with the spiritual, emotional and temporal needs of others. Most
-      often, the spiritual and emotional needs involve prayer, love and
-      belonging, while the temporal needs are focused on clean water, nutrition
-      and shelter.
-    </p>
-    <!-- Use header, main, and footer elements to give semantic structure -->
-  </header>
-
-  <main>
-    <div class="redirect">
-      <p>
-        Check out our current cause by clicking the button below to be
-        redirected to the page:
+      <p class = intro>
+        We are a Worldwide, interfaith community whose mission is to be Unified in helping with the spiritual, emotional and temporal needs of others.  Most often, the spiritual and emotional needs involve prayer, love and belonging, while the temporal needs are focused on clean water, nutrition and shelter.
       </p>
+      <!-- Use header, main, and footer elements to give semantic structure -->
+    </header>
+
+    <main>
+      <div class = redirect>
+        <p>
+          Check out our current cause by clicking the button below to be redirected to the page:
+        </p>
+      </div>
+
+<!-- 
+      <div class="frame">
+        <button class="custom-btn causes-button">Current cause</button>
+      </div> -->
+      <!-- HTML !-->
+      <div class = current>
+        <a style="text-decoration:none" href="https://secure.givelively.org//donate/ugandan-water-project-inc/clean-water-for-ugandan-communities/worldwide-unified" 
+      target="_blank" class="button" >
+        <button class="button-64" role="button"><span class="text">Current Cause</span></button>
+      </a>
+      </div>
+      <br >
+
+      <!-- put a prayer request here -->
+      <div class="book-description">
+        <h2>Login to submit a prayer request</h2>
+      </div>
+      <div class="input">
+        <input type="text" id="name" placeholder="Name" />
+        <button class="prayer-button" onclick="login()">Login</button>
+      </div>
+
+
+      <div class = book-description>
+        <p>
+          Click the image below to go the Amazon page for our book:
+        </p>
+      </div>
+    <div class = book>
+      <a href = "https://www.amazon.com/Hope-Not-Quarantined-Collection-Worldwide/dp/B08QWBZFBX" target="_blank"><img alt = "Book" src = "https://github.com/rperbichi/Startup/blob/main/HNQ.jpeg?raw=true"/></a>
     </div>
 
-    <div class="current">
-      <a
-        style="text-decoration: none"
-        href="https://secure.givelively.org//donate/ugandan-water-project-inc/clean-water-for-ugandan-communities/worldwide-unified"
-        target="_blank"
-        class="button"
-      >
-        <button class="button-64" role="button">
-          <span class="text">Current Cause</span>
-        </button>
-      </a>
-    </div>
-    <br />
-    <!-- Login code-->
-    <div class="book-description">
-      <h2>Login to submit a prayer requestt</h2>
-    </div>
-    <div class="input">
-      <input type="text" id="name" placeholder="Name" />
-      <button class="prayer-button" onclick="login()">Login</button>
-    </div>
-    <br />
-    <div class="book-description">
-      <p>Click the image below to go the Amazon page for our book:</p>
-    </div>
-    <div class="book">
-      <a
-        href="https://www.amazon.com/Hope-Not-Quarantined-Collection-Worldwide/dp/B08QWBZFBX"
-        target="_blank"
-        ><img
-          alt="Book"
-          src="https://github.com/rperbichi/Startup/blob/main/HNQ.jpeg?raw=true"
-      /></a>
-    </div>
-  </main>
-</body>
+    </main>
+
+    <footer>
+    </footer>
+    <script src="login.js" defer></script>
+  </body>
+</html>
+
+
+<!-- js path. login, to prayer, to submit prayer -->
