@@ -84,5 +84,4 @@ Playing around with the example file made me have a better understanding of how 
     - new MongoClient(url) -> creates a new mongo object.
     - DetMe -> data retrieval. 
 
-To access pictures from another directory/folder, do ../folder/imag inside the <img> element. Example:
-../Pictures/WWU Logo.jpeg
+
