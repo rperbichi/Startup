@@ -68,6 +68,9 @@
                 console.log('added', {prayers});
                 let pre = document.querySelector('#msg pre');
                 pre.textContent = '\n' + JSON.stringify(prayers, '\t', 2);
+
+                //saving to localStorage
+                localStorage.setItem('MyPrayerList', JSON.stringify(prayers));
             }
             document.addEventListener('DOMContentLoaded', ()=>{
                 document.getElementById('prayer-button').addEventListener('click', addPrayer);
