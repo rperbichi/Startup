@@ -1,17 +1,31 @@
-
-const playerNameEl = document.querySelector('.user-name');
-playerNameEl.textContent = this.getPlayerName();
+const PrayerSubmitEvent = 'prayerStart'; 
 
 
 
-function getPlayerName() {
-    return localStorage.getItem('userName') ?? 'Anonymous'; //userName has to matchup exactly with setItem in function login
+
+
+//websocket below
+class ThePrayers {
+  //enter variables and constructor if needed here
+  socket;
+
+  constructor() {
+
+
+
+      document.querySelectorAll('.input').forEach((el, i) => {
+          if (i < btnDescriptions.length) {
+              this.buttons.set(el.id, new Button(btnDescriptions[i], el));
+          }
+      });
+
+      const nameEl = document.querySelector('.user-name');
+      nameEl.textContent = this.getPlayerName();
+
+      this.configureWebSocket();
   }
 
-
-
-
-  function loadRequest(){
+  async loadRequest(){
     //declaring and storing variables
     const theNameE1= document.querySelector('#theName');
     const theInfoE1= document.querySelector('#theInfo');
@@ -20,7 +34,51 @@ function getPlayerName() {
 
     window.location.href = 'allprayers.html';
 
+
+    // Let other players know a new game has started
+    this.broadcastEvent(this.getPlayerName(), PrayerSubmitEvent, {});
 }
+
+getPlayerName() {
+  return localStorage.getItem('name') ?? 'No Name';
+}
+
+
+configureWebSocket() {
+  const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+  this.socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+  this.socket.onopen = (event) => {
+    this.displayMsg('system', 'game', 'connected');
+  };
+  this.socket.onclose = (event) => {
+    this.displayMsg('system', 'game', 'disconnected');
+  };
+  this.socket.onmessage = async (event) => {
+    const msg = JSON.parse(await event.data.text());
+    if (msg.type === GameEndEvent) {
+      this.displayMsg('player', msg.from, `scored ${msg.value.score}`);
+    } else if (msg.type === PrayerSubmitEvent) {
+      this.displayMsg('player', msg.from, `submitted a prayer request.`);
+    }
+  };
+}
+
+displayMsg(cls, from, msg) {
+  const chatText = document.querySelector('#player-messages');
+  chatText.innerHTML =
+    `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
+}
+
+broadcastEvent(from, type, value) {
+  const event = {
+    from: from,
+    type: type,
+    value: value,
+  };
+  this.socket.send(JSON.stringify(event));
+}
+}
+//end websocket
 
 //couldn't get this to work. Displayed some tables with my name in it, lol.
 /*
