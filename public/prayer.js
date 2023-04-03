@@ -22,6 +22,21 @@ function getPlayerName() {
 
 }
 
+class Prayers {
+  person;
+  info;
+
+
+  constructor() {
+    this.person = person;
+    this.info = info;
+  }
+
+
+  
+}
+
+
 //couldn't get this to work. Displayed some tables with my name in it, lol.
 /*
 function saveScore(score) {
