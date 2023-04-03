@@ -1,6 +1,12 @@
-function login() {
+async function login() {
     const nameEl = document.querySelector('#name');
     localStorage.setItem('userName', nameEl.value);
+
+    const response = await fetch('/api/auth/create', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },    
+        body: JSON.stringify({username:nameEl.value, password:'password'}),    
+    });
     window.location.href = 'prayer.html'; //takes you to the next html
 } 
 
