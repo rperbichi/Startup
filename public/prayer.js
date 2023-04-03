@@ -1,18 +1,11 @@
 const PrayerSubmitEvent = 'prayerStart'; 
 
-
-
-
-
 //websocket below
 class ThePrayers {
   //enter variables and constructor if needed here
   socket;
 
   constructor() {
-
-
-
       document.querySelectorAll('.input').forEach((el, i) => {
           if (i < btnDescriptions.length) {
               this.buttons.set(el.id, new Button(btnDescriptions[i], el));
@@ -24,6 +17,7 @@ class ThePrayers {
 
       this.configureWebSocket();
   }
+
 
   async loadRequest(){
     //declaring and storing variables
@@ -37,7 +31,7 @@ class ThePrayers {
 
     // Let other players know a new game has started
     this.broadcastEvent(this.getPlayerName(), PrayerSubmitEvent, {});
-}
+  }
 
 getPlayerName() {
   return localStorage.getItem('name') ?? 'No Name';
