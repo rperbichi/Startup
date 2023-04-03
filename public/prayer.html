@@ -57,6 +57,7 @@
         </form>
     
             <script>
+                // FIXME:
                 let prayers = [];
                 //example { name: 'George', info: 'That is surgery goes well'}
                 const addPrayer = (ev)=> { 
@@ -70,7 +71,7 @@
                     document.forms[0].reset(); //clears the form for next entries
     
                     //for displaying in the console only
-                    console.log('added', {prayers});
+                    console.warn('added', {prayers}); //this line was updated
                     let pre = document.querySelector('#msg pre');
                     pre.textContent = '\n' + JSON.stringify(prayers, '\t', 2);
     
