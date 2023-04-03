@@ -84,9 +84,4 @@ Playing around with the example file made me have a better understanding of how 
     - new MongoClient(url) -> creates a new mongo object.
     - DetMe -> data retrieval. 
 
-# Simon WebSocket:
-    
-    - WebSocket improves communication between client and server.
-    - Can be used through API in JavaScript.
-    - ws -> WebSocket Package.
-    - It is used for 2 way communication.
+
