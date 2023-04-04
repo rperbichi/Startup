@@ -1,0 +1,17 @@
+{
+  "name": "worldwide-unified",
+  "version": "1.0.0",
+  "description": "I dare you to find the secret menu.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "mongodb": "^5.1.0",
+    "uuid": "^9.0.0"
+  }
+}
