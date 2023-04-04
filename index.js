@@ -38,6 +38,8 @@ apiRouter.post('/auth/create', async (req, res) => {
   }
 });
 
+
+//TODO create a post getuser function.
 // GetAuth token for the provided credentials
 apiRouter.post('/auth/login', async (req, res) => {
   const user = await DB.getUser(req.body.email);

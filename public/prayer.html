@@ -49,7 +49,7 @@
             </div>
             
             <div class="input">
-                <button class="prayer-button">Submit</button>
+                <button class="prayer-button" id ="prayer-button">Submit</button>
             </div>
             <!-- <div class="input">
                 <button class="prayer-button" onclick="loadRequest()">Submit</button>
@@ -57,13 +57,13 @@
         </form>
     
             <script>
-                // FIXME:
+                // TODO: add a fetch/api/prayers
                 let prayers = [];
                 //example { name: 'George', info: 'That is surgery goes well'}
                 const addPrayer = (ev)=> { 
                     ev.preventDefault(); //stops the form from submitting
                     let prayer = {
-                        id: Date.now(), //grabs the current timestamp
+                        //id: Date.now(), //grabs the current timestamp
                         name: document.getElementById('theName').value,
                         info: document.getElementById('theInfo').value
                     }
@@ -71,7 +71,7 @@
                     document.forms[0].reset(); //clears the form for next entries
     
                     //for displaying in the console only
-                    console.warn('added', {prayers}); //this line was updated
+                    console.log('added', {prayers}); //this line was updated
                     let pre = document.querySelector('#msg pre');
                     pre.textContent = '\n' + JSON.stringify(prayers, '\t', 2);
     
