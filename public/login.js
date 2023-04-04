@@ -1,3 +1,11 @@
+/**
+ * TODO:
+ * -> Allow user to input username AND password
+ * -> If user has an account, accept as valid login and take them to prayer request
+ * -> If not, allow user to create an account.
+ * pseudocode:
+ * 
+ */
 (async () => {
     let authenticated = false;
     const userName = localStorage.getItem('userName');
