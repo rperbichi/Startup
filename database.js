@@ -2,8 +2,8 @@ const { MongoClient } = require('mongodb');
 const bcrypt = require('bcrypt');
 const uuid = require('uuid');
 
-const userName = process.env.MONGOUSER;
-const password = process.env.MONGOPASSWORD;
+const userName = process.env.MONGOUSER; // username
+const password = process.env.MONGOPASSWORD; // password request
 const hostname = process.env.MONGOHOSTNAME;
 
 if (!userName) {
@@ -11,7 +11,7 @@ if (!userName) {
 }
 
 const url = `mongodb+srv://${userName}:${password}@${hostname}`;
-
+console.log(url);
 const client = new MongoClient(url);
 const userCollection = client.db('startup').collection('login info');
 const scoreCollection = client.db('startup').collection('prayers');
