@@ -14,7 +14,7 @@ const url = `mongodb+srv://${userName}:${password}@${hostname}`;
 
 const client = new MongoClient(url);
 const userCollection = client.db('startup').collection('login info');
-const scoreCollection = client.db('startup').collection('prayers');
+const prayerCollection = client.db('startup').collection('prayers');
 
 
 function getUser(email) {
@@ -30,7 +30,7 @@ async function createUser(email, password) {
   const passwordHash = await bcrypt.hash(password, 10);
 
   const user = {
-    email: email, 
+    email: email,
     password: passwordHash,
     token: uuid.v4(),
   };
@@ -39,24 +39,30 @@ async function createUser(email, password) {
   return user;
 }
 
-function addScore(score) {
-  scoreCollection.insertOne(score);
+
+//prayer stuff------------------------------------------------------------------------------
+//adding a prayer to the database. addPrayer found in index.js
+async function addPrayer(prayer) {
+  prayerCollection.insertOne(prayer);
 }
 
-function getHighScores() {
+//getting multiple prayers
+function getPrayers() {
   const query = {};
-  const options = {
-    sort: { score: -1 },
-    limit: 10,
-  };
-  const cursor = scoreCollection.find(query, options);
+  
+  const cursor = prayerCollection.find(query);
   return cursor.toArray();
 }
+//end prayer stuff------------------------------------------------------------------------------
+
+
+
+
 
 module.exports = {
   getUser,
   getUserByToken,
   createUser,
-  addScore,
-  getHighScores,
+  addPrayer,   //prayer stuff
+  getPrayers,  //prayer stuff
 };
