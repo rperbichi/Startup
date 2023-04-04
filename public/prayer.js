@@ -22,6 +22,8 @@ function getPlayerName() {
 
 }
 
+
+
 //couldn't get this to work. Displayed some tables with my name in it, lol.
 /*
 function saveScore(score) {

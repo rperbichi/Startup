@@ -12,8 +12,6 @@ function getPrayWhy() {
     return localStorage.getItem('prayerInfo'); //userName has to matchup exactly with setItem in function login
 }
 
-
-
 //couldn't figure out how to get this to work
 /*
 function displayHeart() {
