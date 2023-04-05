@@ -251,6 +251,7 @@ head {
     font-size: 20px;
     border-radius: 6px;
     transition: 300ms;
+    margin-left: 5px;
 }
 .prayer-button:hover {
     background-image: linear-gradient(144deg,#006CB8, #42F37B 50%,#9FDD49);
