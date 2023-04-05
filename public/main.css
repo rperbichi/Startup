@@ -220,9 +220,12 @@ head {
     font-weight: bold;
 }
 
-.playerName { /* These are the changes that will customize the person's name*/
+/* On index.html, displays user's name  */
+.nameDisplay { /* These are the changes that will customize the person's name*/
     font-family: 'San Francisco', Helvetica, Arial, san-serif;
     font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px; /*giving some space below */
 }
 
 .git img{
