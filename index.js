@@ -81,7 +81,7 @@ secureApiRouter.use(async (req, res, next) => {
   if (user) {
     next();
   } else {
-    res.status(401).send({ msg: 'Unauthorized' });
+    res.status(401).send({ msg:  'Unauthorized' });
   }
 });
 

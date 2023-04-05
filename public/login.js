@@ -39,10 +39,10 @@ async function loginOrCreate(endpoint) {
     });
     const body = await response.json();
 
-    if (response?.status === 200) {
+    if (response?.status === 200) { //if username is in database
         localStorage.setItem('userName', userName);
         window.location.href = 'prayer.html';
-    } else {
+    } else { //display when not in the database
     const modalEl = document.querySelector('#msgModal');
     modalEl.querySelector('.modal-body').textContent = `⚠ Error: ${body.msg}`;
     const msgModal = new bootstrap.Modal(modalEl, {});
