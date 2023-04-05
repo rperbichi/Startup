@@ -1,4 +1,5 @@
 
+const GameStartEvent = 'gameStart';
 //console checking and make prayers list -----------------------------------------------------------------------------------------------------------
 //This code creates a list of prayer requests, and is shown on the console
 //this code also compiles single prayer JSON into a list of prayers
@@ -39,8 +40,9 @@ async function sendPrayer() {
   localStorage.setItem('info', theInfo.value);
   */
  
+  /* FIXME these two lines need to be fixed! */
  // Let other players know a new prayer has submitted
- this.broadcastEvent(this.getPlayerName(), GameStartEvent, {});
+ //this.broadcastEvent(this.getPlayerName(), GameStartEvent, {});
 
   const response = await fetch('/api/prayers', {
     method: 'POST',
@@ -87,9 +89,7 @@ class Game {
     };
     this.socket.onmessage = async (event) => {
       const msg = JSON.parse(await event.data.text());
-      if (msg.type === GameEndEvent) {
-        this.displayMsg('player', msg.from, `scored ${msg.value.score}`);
-      } else if (msg.type === GameStartEvent) {
+      if (msg.type === GameStartEvent) {
         this.displayMsg('player', msg.from, `started a new game`);
       }
     };
