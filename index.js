@@ -24,10 +24,10 @@ app.use(`/api`, apiRouter);
 
 // CreateAuth token for a new user
 apiRouter.post('/auth/create', async (req, res) => {
-  if (await DB.getUser(req.body.username)) {
+  if (await DB.getUser(req.body.email)) {
     res.status(409).send({ msg: 'Existing user' });
   } else {
-    const user = await DB.createUser(req.body.username, req.body.password);
+    const user = await DB.createUser(req.body.email, req.body.password);
 
     // Set the cookie
     setAuthCookie(res, user.token);
@@ -127,3 +127,13 @@ function setAuthCookie(res, authToken) {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+
+//Websocket stuff!
+/*
+const httpService = app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+new PeerProxy(httpService);
+*/
