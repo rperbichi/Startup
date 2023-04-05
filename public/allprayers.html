@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="main.css" />
 <!DOCTYPE html>
     <head>
     <meta charset="UTF-8" />
@@ -7,6 +6,14 @@
     <!--switch href out for the WWU logo-->
     <link rel="icon" href="WWU logo.jpg" />
     <script src="login.js" defer></script>
+
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     </head>
     <body>
     <header>
@@ -22,24 +29,26 @@
                 <div class="button-65"><a href="contact.html">Contact Us</a></div>
             </menu>
     </header>
-
-
-
-
-    <main class="prayForMePlease">
-        <!-- displaying the prayer request-->
-        <table class="table">
-            <thead>
+    <main class="container-fluid bg-secondary text-center">
+        <!-- displaying the prayer requests-->
+        <table class="table table-warning table-striped-columns">
+            <!-- changing class table-dark to table-blue -->
+            <thead class="table-dark"> 
               <tr>
-                <th>Praying for
-                    <div class="pray-for"></div>
-                </th>
-                <th>Prayer Reason
-                    <div class="pray-why"></div>
-                </th>
+                <th>Praying for</th>
+                <th>Message</th>
               </tr>
             </thead>
-            <tbody id="scores"></tbody>
+            <tbody id="prayers">
+                <tr >
+                    <td>Test Name</td>
+                    <td>This person was created in the html file as a template of what would happen.</td>
+                </tr>
+                <tr >
+                    <td>Johnny Cash</td>
+                    <td>I really hope he does well singing.</td>
+                </tr>
+            </tbody>
           </table>
         <!-- displaying the prayer request -->
  
@@ -52,6 +61,6 @@
     </footer>
 
 
-    <script src="submitprayer.js" defer></script>
+    <script src="allprayers.js"></script>
     </body>
 </html>
