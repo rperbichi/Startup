@@ -3,7 +3,11 @@ const bcrypt = require('bcrypt');
 const express = require('express');
 const app = express();
 const DB = require('./database.js');
-//const { PeerProxy } = require('./endpointProxy.js');
+//websocket stuff
+const { EndPointProxy } = require('./endpointProxy.js');
+
+
+
 
 const authCookieName = 'token';
 
@@ -125,16 +129,16 @@ function setAuthCookie(res, authToken) {
   });
 }
 
+/* use this when not using websocket
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+*/
 
 
 //Websocket stuff!
-/*
 const httpService = app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
 
-new PeerProxy(httpService);
-*/
+new EndPointProxy(httpService);

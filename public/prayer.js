@@ -38,6 +38,10 @@ async function sendPrayer() {
   localStorage.setItem('name', theName.value);
   localStorage.setItem('info', theInfo.value);
   */
+ 
+ // Let other players know a new prayer has submitted
+ this.broadcastEvent(this.getPlayerName(), GameStartEvent, {});
+
   const response = await fetch('/api/prayers', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
@@ -58,3 +62,58 @@ function getPlayerName() {
     return localStorage.getItem('userName') ?? 'Anonymous'; //userName has to matchup exactly with setItem in function login
   }
 //end display user-------------------------------------------------------------------------
+
+
+
+class Game {
+  socket;
+
+  constructor() {
+
+    const playerNameEl = document.querySelector('.user-name');
+    playerNameEl.textContent = this.getPlayerName();
+
+    this.configureWebSocket();
+  }
+
+  configureWebSocket() {
+    const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+    this.socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+    this.socket.onopen = (event) => {
+      this.displayMsg('system', 'game', 'connected');
+    };
+    this.socket.onclose = (event) => {
+      this.displayMsg('system', 'game', 'disconnected');
+    };
+    this.socket.onmessage = async (event) => {
+      const msg = JSON.parse(await event.data.text());
+      if (msg.type === GameEndEvent) {
+        this.displayMsg('player', msg.from, `scored ${msg.value.score}`);
+      } else if (msg.type === GameStartEvent) {
+        this.displayMsg('player', msg.from, `started a new game`);
+      }
+    };
+  }
+  
+  displayMsg(cls, from, msg) {
+    const chatText = document.querySelector('#player-messages');
+    chatText.innerHTML =
+      `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
+  }
+  
+  broadcastEvent(from, type, value) {
+    const event = {
+      from: from,
+      type: type,
+      value: value,
+    };
+    this.socket.send(JSON.stringify(event));
+  }
+
+
+}
+ // Functionality for peer communication using WebSocket
+
+ 
+
+

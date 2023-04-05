@@ -3,6 +3,7 @@
     const userName = localStorage.getItem('userName');
     if (userName) {
       const nameEl = document.querySelector('#userName');
+      //console.log(`Printing out userName: ${nameEl}`)
       nameEl.value = userName;
       const user = await getUser(nameEl.value);
       authenticated = user?.authenticated;
