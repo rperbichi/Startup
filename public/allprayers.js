@@ -45,11 +45,11 @@
 
       populateTable.appendChild(rowNext);
       //second row? ---------------------------------------------------------------------------------
-      rowNext.appendChild(nameTable);
-      rowNext.appendChild(infoTable);
+      // rowNext.appendChild(nameTable);
+      // rowNext.appendChild(infoTable);
 
 
-      populateTable.appendChild(rowNext);
+      // populateTable.appendChild(rowNext);
 
     }
   } else { //if there are no prayer requests
