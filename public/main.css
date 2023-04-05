@@ -220,6 +220,14 @@ head {
     font-weight: bold;
 }
 
+/* On index.html, displays user's name  */
+.nameDisplay { /* These are the changes that will customize the person's name*/
+    font-family: 'San Francisco', Helvetica, Arial, san-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px; /*giving some space below */
+}
+
 .git img{
     max-height: 150px;
     max-width: 200px;
