@@ -38,6 +38,8 @@ apiRouter.post('/auth/create', async (req, res) => {
   }
 });
 
+
+//TODO create a post getuser function.
 // GetAuth token for the provided credentials
 apiRouter.post('/auth/login', async (req, res) => {
   const user = await DB.getUser(req.body.email);
@@ -82,18 +84,26 @@ secureApiRouter.use(async (req, res, next) => {
   }
 });
 
-// GetScores
-secureApiRouter.get('/scores', async (req, res) => {
-  const scores = await DB.getHighScores();
-  res.send(scores);
+
+//prayer stuff-------------------------------------------------------------------------------------
+// get prayers.... found in database.js
+apiRouter.get('/prayers', async (req, res) => {
+  const prayers = await DB.getPrayers();
+  res.send(prayers);
 });
 
-// SubmitScore
-secureApiRouter.post('/score', async (req, res) => {
-  await DB.addScore(req.body);
-  const scores = await DB.getHighScores();
-  res.send(scores);
+// post prayers
+apiRouter.post('/prayers', async (req, res) => {
+    //when only pulling one prayer from the database
+    //const user = await DB.addPrayer(req.body.name, req.body.info); 
+
+    //when pulling multiple prayers from the database
+    await DB.addPrayer(req.body);
+    const prayers = await DB.getPrayers();
+    res.send(prayers);
 });
+//end prayer stuff--------------------------------------------------------------------------
+
 
 // Default error handler
 app.use(function (err, req, res, next) {

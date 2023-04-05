@@ -34,6 +34,7 @@
           </div>
         <!-- end calling the user by name -->
 
+
         <form>
             <div class="book-description">
                 <h2>Enter the information below for the prayer request:</h2>
@@ -48,7 +49,7 @@
             </div>
             
             <div class="input">
-                <button class="prayer-button">Submit</button>
+                <button class="prayer-button" id ="prayer-button" onclick="sendPrayer()">Submit</button>
             </div>
             <!-- <div class="input">
                 <button class="prayer-button" onclick="loadRequest()">Submit</button>
@@ -56,29 +57,7 @@
         </form>
     
             <script>
-                let prayers = [];
-                //example { name: 'George', info: 'That is surgery goes well'}
-                const addPrayer = (ev)=> { 
-                    ev.preventDefault(); //stops the form from submitting
-                    let prayer = {
-                        id: Date.now(), //grabs the current timestamp
-                        name: document.getElementById('theName').value,
-                        info: document.getElementById('theInfo').value
-                    }
-                    prayers.push(prayer);
-                    document.forms[0].reset(); //clears the form for next entries
-    
-                    //for displaying in the console only
-                    console.log('added', {prayers});
-                    let pre = document.querySelector('#msg pre');
-                    pre.textContent = '\n' + JSON.stringify(prayers, '\t', 2);
-    
-                    //saving to localStorage
-                    localStorage.setItem('MyPrayerList', JSON.stringify(prayers));
-                }
-                document.addEventListener('DOMContentLoaded', ()=>{
-                    document.getElementById('prayer-button').addEventListener('click', addPrayer);
-                });
+                
             </script>
     </main>
 
