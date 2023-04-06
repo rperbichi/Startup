@@ -220,6 +220,14 @@ head {
     font-weight: bold;
 }
 
+/* On index.html, displays user's name  */
+.nameDisplay { /* These are the changes that will customize the person's name*/
+    font-family: 'San Francisco', Helvetica, Arial, san-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px; /*giving some space below */
+}
+
 .git img{
     max-height: 150px;
     max-width: 200px;
@@ -251,6 +259,7 @@ head {
     font-size: 20px;
     border-radius: 6px;
     transition: 300ms;
+    margin-left: 5px;
 }
 .prayer-button:hover {
     background-image: linear-gradient(144deg,#006CB8, #42F37B 50%,#9FDD49);
@@ -293,3 +302,11 @@ head {
     }
   }
 /* end prayer submission table */
+
+
+
+/* stuff for allprayers.html */
+.table-blue {
+    background-color: #006CB8;
+}
+/* end stuff for allprayers.html */

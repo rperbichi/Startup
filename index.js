@@ -3,6 +3,11 @@ const bcrypt = require('bcrypt');
 const express = require('express');
 const app = express();
 const DB = require('./database.js');
+//websocket stuff
+const { EndPointProxy } = require('./endpointProxy.js');
+
+
+
 
 const authCookieName = 'token';
 
@@ -24,10 +29,10 @@ app.use(`/api`, apiRouter);
 
 // CreateAuth token for a new user
 apiRouter.post('/auth/create', async (req, res) => {
-  if (await DB.getUser(req.body.username)) {
+  if (await DB.getUser(req.body.email)) {
     res.status(409).send({ msg: 'Existing user' });
   } else {
-    const user = await DB.createUser(req.body.username, req.body.password);
+    const user = await DB.createUser(req.body.email, req.body.password);
 
     // Set the cookie
     setAuthCookie(res, user.token);
@@ -80,22 +85,30 @@ secureApiRouter.use(async (req, res, next) => {
   if (user) {
     next();
   } else {
-    res.status(401).send({ msg: 'Unauthorized' });
+    res.status(401).send({ msg:  'Unauthorized' });
   }
 });
 
-// GetScores
-secureApiRouter.get('/scores', async (req, res) => {
-  const scores = await DB.getHighScores();
-  res.send(scores);
+
+//prayer stuff-------------------------------------------------------------------------------------
+// get prayers.... found in database.js
+apiRouter.get('/prayers', async (req, res) => {
+  const prayers = await DB.getPrayers();
+  res.send(prayers);
 });
 
-// SubmitScore
-secureApiRouter.post('/score', async (req, res) => {
-  await DB.addScore(req.body);
-  const scores = await DB.getHighScores();
-  res.send(scores);
+// post prayers
+apiRouter.post('/prayers', async (req, res) => {
+    //when only pulling one prayer from the database
+    //const user = await DB.addPrayer(req.body.name, req.body.info); 
+
+    //when pulling multiple prayers from the database
+    await DB.addPrayer(req.body);
+    const prayers = await DB.getPrayers();
+    res.send(prayers);
 });
+//end prayer stuff--------------------------------------------------------------------------
+
 
 // Default error handler
 app.use(function (err, req, res, next) {
@@ -116,6 +129,16 @@ function setAuthCookie(res, authToken) {
   });
 }
 
+/* use this when not using websocket
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+*/
+
+
+//Websocket stuff!
+const httpService = app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+new EndPointProxy(httpService);

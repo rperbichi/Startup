@@ -1,0 +1,22 @@
+.quote-box {
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: #006CB8;
+}
+
+.quote {
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+.author {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.author::before {
+    content: " - ";
+}

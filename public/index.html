@@ -55,10 +55,58 @@
       <div class="book-description">
         <h2>Login to submit a prayer request</h2>
       </div>
-      <div class="input">
-        <input type="text" id="name" placeholder="Name" />
-        <button class="prayer-button" onclick="login()">Login</button>
+      
+      <div id="loginControls" style="display: none">
+        <div class="input">
+          <input 
+          type="text" 
+          id="userName" 
+          placeholder="Name" />
+        </div>
+        <div class="input">
+          <input 
+          type="text" 
+          id="userPassword" 
+          placeholder="Password" />
+        </div>
+      <br>
+        <div class="input">
+          <button class="prayer-button" onclick="loginUser()">Login</button>
+          <button type="button" class="prayer-button" onclick="createUser()">Create User</button>
+        </div>
+    </div>
+
+
+    <!-- Displayed when ready to play -->
+    <div id="playControls" style="display: none" class="input">
+      <div id="playerName" class="nameDisplay"></div>
+      <button type="button"  class="prayer-button" onclick="play()">
+        See prayers
+      </button>
+      <button type="button" class="prayer-button" onclick="logout()">
+        Logout
+      </button>
+    </div>
+
+
+    <!-- Error dialog
+    <div class="modal fade" id="msgModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+          <div class="modal-body">error message here</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
+    </div> -->
+
 
 
       <div class = book-description>
