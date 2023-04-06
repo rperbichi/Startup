@@ -87,8 +87,18 @@ Playing around with the example file made me have a better understanding of how 
 
 To access pictures from another directory/folder, do ../folder/imag inside the  element. Example: ../Pictures/WWU Logo.jpeg
 
-Simon WebSocket:
-- WebSocket improves communication between client and server.
-- Can be used through API in JavaScript.
-- ws -> WebSocket Package.
-- It is used for 2 way communication.
+# Simon WebSocket:
+
+    - WebSocket improves communication between client and server.
+    - Can be used through API in JavaScript.
+    - ws -> WebSocket Package.
+    - It is used for 2 way communication.
+
+# Startup Service Deliverable:
+
+    - We were able to implement all features, besides WebSocket, which is really close to working properly.
+    - It was nice to see how you can do API fetch and how you can customize the information being received using CSS.
+    - We learned a lot about how Node.js makes communication with MongoDB extremely effecient.
+    - We also learned how to change system environment variables.
+    - Now that the project is larger, we realize how we should have organized our files in the beginning. 
+    - We were also able to learn how to move between rbanches and how to create new branches.
