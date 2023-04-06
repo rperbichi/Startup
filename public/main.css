@@ -310,3 +310,11 @@ head {
     background-color: #006CB8;
 }
 /* end stuff for allprayers.html */
+
+#status {
+    margin-bottom: 10px;
+}
+  #messages {
+    max-height: 300px;
+    overflow-y: scroll;
+}
