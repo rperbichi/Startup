@@ -102,3 +102,11 @@ To access pictures from another directory/folder, do ../folder/imag inside the  
     - We also learned how to change system environment variables.
     - Now that the project is larger, we realize how we should have organized our files in the beginning. 
     - We were also able to learn how to move between rbanches and how to create new branches.
+
+# Simon React:
+
+    - React makes the application faster and more efficient.
+    - Easy to pass information to components.
+    - Easier to update states.
+    - Components can be reused.
+    - Allows for more flexibility.
