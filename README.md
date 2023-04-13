@@ -83,3 +83,12 @@ Playing around with the example file made me have a better understanding of how 
     - For simon, we need to return some of the user's information to the scores tab.
     - new MongoClient(url) -> creates a new mongo object.
     - DetMe -> data retrieval. 
+
+
+To access pictures from another directory/folder, do ../folder/imag inside the  element. Example: ../Pictures/WWU Logo.jpeg
+
+Simon WebSocket:
+- WebSocket improves communication between client and server.
+- Can be used through API in JavaScript.
+- ws -> WebSocket Package.
+- It is used for 2 way communication.

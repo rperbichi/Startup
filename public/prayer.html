@@ -26,32 +26,39 @@
 
 
 
-    <main class="prayForMePlease">
-        <!-- displaying the prayer request-->
-        <table class="table">
-            <thead>
-              <tr>
-                <th>Praying for
-                    <div class="pray-for"></div>
-                </th>
-                <th>Prayer Reason
-                    <div class="pray-why"></div>
-                </th>
-              </tr>
-            </thead>
-            <tbody id="scores"></tbody>
-          </table>
-        <!-- displaying the prayer request -->
- 
+    <main>
+        <!-- Calling the user by name -->
+        <div class="user">
+            Welcome
+            <span class="user-name"></span>
+            <div id ="player-messages"></div>
+          </div>
+        <!-- end calling the user by name -->
+
+        <div class="book-description">
+            <h2>Enter the information below for the prayer request:</h2>
+        </div>
+
+        <div class="input">
+            <input type="text" id="theName" placeholder="Who to pray for?" />
+        </div>
+
+        <div class="input">
+            <input type="text" id="theInfo" placeholder="What are we praying for?" />
+        </div>
+
+        <div class="input">
+            <button class="prayer-button" onclick="loadRequest()">Submit</button>
+        </div>
     </main>
 
 
-    
+
     <footer>
 
     </footer>
 
-
-    <script src="submitprayer.js" defer></script>
+    <script src="prayer.js"></script>
+    <script src="script.js" defer></script>
     </body>
 </html>
