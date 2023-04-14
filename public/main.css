@@ -369,6 +369,9 @@ a.active,a:hover {
 
 
 
+
+
+
 li:hover {
     background: #42f37b; /*FIX THIS*/
 }
@@ -388,14 +391,14 @@ li:hover {
     display: none;
 }
 
-@media (max-width: 952px) {
+/* @media (max-width: 952px) {
     .logo {
         padding-left: 50px;
     }
     nav ul li a {
         font-size: 16px;
     }
-}
+} */
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
