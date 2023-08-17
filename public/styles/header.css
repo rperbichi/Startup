@@ -39,7 +39,7 @@ header nav ul {
   transition: transform var(--animation-duration);
 }
 
-header nav #check:checked + ul {
+header nav #check:checked ~ ul {
   transform: translateX(0);
 }
 
