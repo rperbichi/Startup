@@ -7,6 +7,8 @@ header {
 header nav {
   display: flex;
   flex-flow: row nowrap;
+
+  background-color: var(--background-color);
 }
 
 header nav #check {
