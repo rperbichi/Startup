@@ -1,92 +1,92 @@
 <link rel="stylesheet" href="main.css" />
 <!DOCTYPE html>
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Tell browsers not to scale the viewport automatically -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Worldwide Unified</title> <!-- Gives the title that shows on tab -->
-    <script src="home.js" defer></script> <!-- Linking JavaScript -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <!--switch href out for the WWU logo-->
-    <link rel="icon" href="https://github.com/rperbichi/Startup/blob/main/public/WWU%20banner.jpeg" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <img class="logo" alt = "Banner" src = "WWU banner.jpeg">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a alt="group link" href="https://www.facebook.com/groups/534352464165662/" target="_blank">Visit Group</a></li>
-                <li><a href="devotionals.html">Devotionals</a></li>
-                <li><a href="podcasts.html">Podcasts</a></li>
-                <li><a href="sponsors.html">Partnerships</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-      </nav>
 
-      <p class = intro>
-        We are a Worldwide, interfaith community whose mission is to be Unified in helping with the spiritual, emotional and temporal needs of others.  Most often, the spiritual and emotional needs involve prayer, love and belonging, while the temporal needs are focused on clean water, nutrition and shelter.
+<head>
+  <meta charset="UTF-8" />
+  <!-- Tell browsers not to scale the viewport automatically -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worldwide Unified</title> <!-- Gives the title that shows on tab -->
+  <script src="home.js" defer></script> <!-- Linking JavaScript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!--switch href out for the WWU logo-->
+  <link rel="icon" href="https://github.com/rperbichi/Startup/blob/main/public/WWU%20banner.jpeg" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img class="logo" alt="Banner" src="WWU banner.jpeg">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a alt="group link" href="https://www.facebook.com/groups/534352464165662/" target="_blank">Visit Group</a>
+        </li>
+        <li><a href="devotionals.html">Devotionals</a></li>
+        <li><a href="podcasts.html">Podcasts</a></li>
+        <li><a href="sponsors.html">Partnerships</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p class=intro>
+      We are a Worldwide, interfaith community whose mission is to be Unified in helping with the spiritual, emotional
+      and temporal needs of others. Most often, the spiritual and emotional needs involve prayer, love and belonging,
+      while the temporal needs are focused on clean water, nutrition and shelter.
+    </p>
+    <!-- Use header, main, and footer elements to give semantic structure -->
+  </header>
+
+  <main>
+    <br>
+    <div class=redirect>
+      <p>
+        Check out our current cause by clicking the button below to be redirected to the page:
       </p>
-      <!-- Use header, main, and footer elements to give semantic structure -->
-    </header>
+    </div>
 
-    <main>
-      <br>
-      <div class = redirect>
-        <p>
-          Check out our current cause by clicking the button below to be redirected to the page:
-        </p>
-      </div>
-
-<!-- 
+    <!-- 
       <div class="frame">
         <button class="custom-btn causes-button">Current cause</button>
       </div> -->
-      <!-- HTML !-->
-      <div class = current>
-        <a style="text-decoration:none" href="https://secure.givelively.org//donate/ugandan-water-project-inc/clean-water-for-ugandan-communities/worldwide-unified" 
-      target="_blank" class="button" >
+    <!-- HTML !-->
+    <div class=current>
+      <a style="text-decoration:none"
+        href="https://secure.givelively.org//donate/ugandan-water-project-inc/clean-water-for-ugandan-communities/worldwide-unified"
+        target="_blank" class="button">
         <button class="button-64" role="button"><span class="text">Current Cause</span></button>
       </a>
-      </div>
-      <br>
+    </div>
+    <br>
 
-      <!-- put a prayer request here -->
-      <div class="book-description">
-        <h2>Login to submit a prayer request</h2>
+    <!-- put a prayer request here -->
+    <div class="book-description">
+      <h2>Login to submit a prayer request</h2>
+    </div>
+
+    <div id="loginControls" style="display: none">
+      <div class="input">
+        <input type="text" id="userName" placeholder="Name" />
       </div>
-      
-      <div id="loginControls" style="display: none">
-        <div class="input">
-          <input 
-          type="text" 
-          id="userName" 
-          placeholder="Name" />
-        </div>
-        <div class="input">
-          <input 
-          type="text" 
-          id="userPassword" 
-          placeholder="Password" />
-        </div>
+      <div class="input">
+        <input type="text" id="userPassword" placeholder="Password" />
+      </div>
       <br>
-        <div class="input">
-          <button class="prayer-button" onclick="loginUser()">Login</button>
-          <button type="button" class="prayer-button" onclick="createUser()">Create User</button>
-        </div>
+      <div class="input">
+        <button class="prayer-button" onclick="loginUser()">Login</button>
+        <button type="button" class="prayer-button" onclick="createUser()">Create User</button>
+      </div>
     </div>
 
 
     <!-- Displayed when ready to play -->
     <div id="playControls" style="display: none" class="input">
       <div id="playerName" class="nameDisplay"></div>
-      <button type="button"  class="prayer-button" onclick="play()">
+      <button type="button" class="prayer-button" onclick="play()">
         See prayers
       </button>
       <button type="button" class="prayer-button" onclick="logout()">
@@ -115,21 +115,23 @@
 
 
 
-      <div class = book-description>
-        <p>
-          Click the image below to go the Amazon page for our book:
-        </p>
-      </div>
-    <div class = book>
-      <a href = "https://www.amazon.com/Hope-Not-Quarantined-Collection-Worldwide/dp/B08QWBZFBX" target="_blank"><img alt = "Book" src = "HNQ.jpeg"/></a>
+    <div class=book-description>
+      <p>
+        Click the image below to go the Amazon page for our book:
+      </p>
+    </div>
+    <div class=book>
+      <a href="https://www.amazon.com/Hope-Not-Quarantined-Collection-Worldwide/dp/B08QWBZFBX" target="_blank"><img
+          alt="Book" src="HNQ.jpeg" /></a>
     </div>
 
-    </main>
+  </main>
 
-    <footer>
-    </footer>
-    <script src="login.js" defer></script>
-  </body>
+  <footer>
+  </footer>
+  <script src="login.js" defer></script>
+</body>
+
 </html>
 
 
