@@ -2,6 +2,7 @@
 
 header {
   --background-color: var(--blue-dark-2)
+  --header-height: 100px;
 }
 
 header nav {
@@ -29,7 +30,7 @@ header nav .checkbtn i {
 }
 
 header nav img {
-  max-height: 100px
+  max-height: var(--header-height);
 }
 
 header nav ul {
@@ -42,15 +43,7 @@ header nav ul {
   margin-left: auto;
 
   list-style: none;
-
-  transform: translateX(100%);
-  transition: transform var(--animation-duration);
 }
-
-header nav #check:checked ~ ul {
-  transform: translateX(0);
-}
-
 
 header nav :link {
   padding: 1.3em 0.875em;
@@ -74,6 +67,12 @@ header nav :link:active {
     inset: 0 0 0 auto;
     
     font-size: 25px;
+    transform: translate(100%, var(--header-height));
+    transition: transform var(--animation-duration);
+  }
+  
+  header nav #check:checked ~ ul {
+    transform: translate(0, var(--header-height));
   }
 
   header nav .checkbtn {
