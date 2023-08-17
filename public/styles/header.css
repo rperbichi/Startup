@@ -39,7 +39,12 @@ header nav :link {
   padding: 1.3em 0.875em;
 
   font-size: 1.25em;
-  color: var(--text-light)
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+header nav :link:active {
+  color: var(--light-green-1)
 }
 
 @media screen and (max-width: 59em) {

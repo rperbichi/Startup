@@ -4,5 +4,8 @@
   --blue-light-1:hsla(204, 83%, 49%, 1);
   --blue-light-2: hsla(210, 95%, 63%, 1);
 
+  --green-dark-1:#61B255;
+  --green-light-1:#B5DF40;
+
   --text-light: white; 
 }
