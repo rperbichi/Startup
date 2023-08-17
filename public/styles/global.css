@@ -1,5 +1,8 @@
+@import url(./variables.css);
 @import url(./header.css);
 
-p {
+
+body {
+  margin: 0;
   font: var(--text-body);
 }
