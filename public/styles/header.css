@@ -47,6 +47,7 @@ header nav ul {
 
 header nav :link,
 header nav :link:visited {
+  display: block;
   padding: 1.3em 0.875em;
 
   font-size: 1.25em;
