@@ -1,5 +1,5 @@
 @import url(./header.css);
 
 p {
-  font-size: var(--text-body);
+  font: var(--text-body);
 }
