@@ -58,8 +58,11 @@ header nav :link:active {
 
 @media screen and (max-width: 59em) {
   header nav ul {
-    position: fixed;
     flex-flow: column;
+    
+    background-color: inherit;
+
+    position: fixed; 
     inset: 0 0 0 auto;
     
     font-size: 25px;
