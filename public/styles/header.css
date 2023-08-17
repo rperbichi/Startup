@@ -33,10 +33,14 @@ header nav a {
   font-size: 1.25em;
 }
 
-@media screen and (max-width: 58em) {
+@media screen and (max-width: 59em) {
   header nav ul {
     position: fixed;
     flex-flow: column;
     inset: 0 0 0 auto;
+  }
+
+  header nav .checkbtn {
+    display: block;
   }
 }
