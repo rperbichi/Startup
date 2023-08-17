@@ -17,6 +17,7 @@ header nav #check {
 
 header nav .checkbtn {
   display: none;
+  order: 1;
 }
 
 header nav img {
