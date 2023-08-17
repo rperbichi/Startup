@@ -34,7 +34,15 @@ header nav ul {
   margin-left: auto;
 
   list-style: none;
+
+  transform: translateX(100%);
+  transition: transform var(--animation-duration);
 }
+
+header nav #check:checked + ul {
+  transform: translateX(0);
+}
+
 
 header nav :link {
   padding: 1.3em 0.875em;
