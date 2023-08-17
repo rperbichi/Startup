@@ -1,3 +1,9 @@
+@import url("./variables.css");
+
+header {
+  --background-color: var(--blue-dark-2)
+}
+
 header nav {
   display: flex;
   flex-flow: row nowrap;
@@ -27,10 +33,11 @@ header nav ul {
   list-style: none;
 }
 
-header nav a {
+header nav :link {
   padding: 1.3em 0.875em;
 
   font-size: 1.25em;
+  color: var(--text-light)
 }
 
 @media screen and (max-width: 59em) {
@@ -38,6 +45,8 @@ header nav a {
     position: fixed;
     flex-flow: column;
     inset: 0 0 0 auto;
+    
+    font-size: 25px;
   }
 
   header nav .checkbtn {

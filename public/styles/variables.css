@@ -1,0 +1,8 @@
+:root {
+  --blue-dark-2: hsla(207, 100%, 37%, 1);
+  --blue-dark-1:hsla(220, 60%, 50%, 1);
+  --blue-light-1:hsla(204, 83%, 49%, 1);
+  --blue-light-2: hsla(210, 95%, 63%, 1);
+
+  --text-light: white; 
+}
