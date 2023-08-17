@@ -69,12 +69,12 @@ header nav :link:active {
     inset: 0 0 0 auto;
     
     font-size: 25px;
-    transform: translate(100%, var(--header-height));
+    transform: translateY(var(--header-height)) translateX(100%);
     transition: transform var(--animation-duration);
   }
   
   header nav #check:checked ~ ul {
-    transform: translate(0, var(--header-height));
+    transform: translateY(var(--header-height)) translateX(0);
   }
 
   header nav .checkbtn {
