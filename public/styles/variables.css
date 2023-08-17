@@ -8,6 +8,9 @@
   --green-light-1:#B5DF40;
 
   --text-light: white; 
+  --text-dark: #707070;
 
   --animation-duration: 0.25s;
+
+  --text-body: 1rem;
 }
