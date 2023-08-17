@@ -3,6 +3,14 @@ header nav {
   flex-flow: row nowrap;
 }
 
+header nav #check {
+  display: none;
+}
+
+header nav .checkbtn {
+  display: none;
+}
+
 header nav img {
   max-height: 100px
 }
@@ -23,4 +31,12 @@ header nav a {
   padding: 1.3em 0.875em;
 
   font-size: 1.25em;
+}
+
+@media screen and (max-width: 58em) {
+  header nav ul {
+    position: fixed;
+    flex-flow: column;
+    inset: 0 0 0 auto;
+  }
 }
