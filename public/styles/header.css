@@ -35,7 +35,7 @@ header nav img {
 header nav ul {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
+  align-items: stretch;
 
   padding: 0;
   margin: 0;
@@ -52,6 +52,7 @@ header nav :visited {
   font-size: 1.25em;
   color: var(--text-light);
   text-decoration: none;
+  text-align: center;
 }
 
 header nav :active {
