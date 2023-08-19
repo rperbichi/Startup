@@ -9,6 +9,7 @@ body {
 
 button {
   background-color: var(--blue-light-1);
+  border: none;
   border-radius: 100vmax;
   padding: 1em 65px;
 
