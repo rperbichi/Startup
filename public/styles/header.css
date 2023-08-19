@@ -45,7 +45,7 @@ header nav ul {
 }
 
 header nav :link,
-header nav :link:visited {
+header nav :visited {
   display: block;
   padding: 1.3em 0.875em;
 
@@ -54,7 +54,7 @@ header nav :link:visited {
   text-decoration: none;
 }
 
-header nav :link:active {
+header nav :active {
   color: var(--light-green-1)
 }
 
