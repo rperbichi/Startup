@@ -6,3 +6,23 @@ body {
   margin: 0;
   font: var(--text-body);
 }
+
+button {
+  background-color: var(--blue-light-1);
+  border-radius: 100vmax;
+  padding: 1em 65px;
+
+  color: var(--text-light);
+  font-size: 1.75em;
+}
+
+button:hover {
+  background-color: var(--blue-light-2);
+}
+
+button.outlined {
+  border: 5px solid var(--blue-light-2);
+  background-color: transparent;
+  
+  color: var(--blue-light-2);
+}
