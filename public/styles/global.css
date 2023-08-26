@@ -39,7 +39,10 @@ h2 {
 input,
 textarea {
   border: 3px solid var(--blue-light-1);
+  border-radius: 0.333em;
   padding: 1.16em 1.33em;
 
   font-size: 1.5em;
+
+  margin-bottom: 1em;
 }
