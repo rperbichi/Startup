@@ -1,10 +1,13 @@
 @import url(./variables.css);
 @import url(./header.css);
 
-
 body {
   margin: 0;
   font: var(--text-body);
+}
+
+main {
+  text-align: center;
 }
 
 button {
@@ -24,6 +27,19 @@ button:hover {
 button.outlined {
   border: 5px solid var(--blue-light-2);
   background-color: transparent;
-  
+
   color: var(--blue-light-2);
+}
+
+h2 {
+  color: var(--blue-dark-2);
+  font-size: 2.5em;
+}
+
+input,
+textarea {
+  border: 3px solid var(--blue-light-1);
+  padding: 1.16em 1.33em;
+
+  font-size: 1.5em;
 }
