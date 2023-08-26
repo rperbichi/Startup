@@ -66,19 +66,20 @@ header nav :active {
     flex-flow: column;
     align-items: stretch;
 
+    border-radius: 1.2em 0 0 1.2em;
     background-color: inherit;
-    margin: none;
+    margin: 0;
 
     position: fixed;
-    inset: 0 0 0 auto;
+    inset: var(--header-height) 0 0 auto;
 
     font-size: 25px;
-    transform: translateY(var(--header-height)) translateX(100%);
-    transition: transform var(--animation-duration);
+    transform: translateX(100%);
+    transition: var(--animation-duration);
   }
 
   header nav #check:checked ~ ul {
-    transform: translateY(var(--header-height)) translateX(0);
+    transform: translateX(0);
   }
 
   header nav .checkbtn {
