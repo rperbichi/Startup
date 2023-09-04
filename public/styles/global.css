@@ -43,6 +43,7 @@ h4,
 h5,
 h6 {
   font: var(--text-heading);
+  text-transform: capitalize;
 }
 
 h2 {
