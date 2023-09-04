@@ -1,5 +1,6 @@
 @import url(./variables.css);
 @import url(./header.css);
+@import url(./fonts.css);
 
 body {
   margin: 0;
@@ -38,11 +39,23 @@ h2 {
 
 input,
 textarea {
-  border: 3px solid var(--blue-light-1);
+  border: 3px solid var(--border-color);
+  background-color: var(--input-background-color);
   border-radius: 0.333em;
   padding: 1.16em 1.33em;
 
   font-size: 1.5em;
 
   margin-bottom: 1em;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-placeholder);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--border-color-focused);
+  outline: none;
 }
