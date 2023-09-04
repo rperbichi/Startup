@@ -1,54 +1,59 @@
 <link rel="stylesheet" href="main.css" />
 <!DOCTYPE html>
 
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Tell browsers not to scale the viewport automatically -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Worldwide Unified</title> <!-- Gives the title that shows on tab -->
-    <script src="home.js" defer></script> <!-- Linking JavaScript -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <!--switch href out for the WWU logo-->
-    <link rel="icon" href="WWU logo.jpg" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <!-- Use header, main, and footer elements to give semantic structure -->
-    <header>
-      <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <img class="logo" alt = "Banner" src = "WWU banner.jpeg">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a alt="group link" href="https://www.facebook.com/groups/534352464165662/" target="_blank">Visit Group</a></li>
-                <li><a href="devotionals.html">Devotionals</a></li>
-                <li><a href="podcasts.html">Podcasts</a></li>
-                <li><a href="sponsors.html">Partnerships</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-      </nav> 
- 
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <!-- Tell browsers not to scale the viewport automatically -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worldwide Unified</title> <!-- Gives the title that shows on tab -->
+  <link rel="stylesheet" href="./styles/global.css" />
+  <script src="home.js" defer></script> <!-- Linking JavaScript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!--switch href out for the WWU logo-->
+  <link rel="icon" href="WWU logo.jpg" />
+  <script src="script.js" defer></script>
+</head>
 
-    <main>
-      <div class = mail-text>
-        <p>
-          Send us an email by clicking the icon below:
-        </p>
+<body>
+  <!-- Use header, main, and footer elements to give semantic structure -->
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img class="logo" alt="Banner" src="WWU banner.jpeg">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a alt="group link" href="https://www.facebook.com/groups/534352464165662/" target="_blank">Visit Group</a>
+        </li>
+        <li><a href="devotionals.html">Devotionals</a></li>
+        <li><a href="podcasts.html">Podcasts</a></li>
+        <li><a href="sponsors.html">Partnerships</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class=mail-text>
+      <p>
+        Send us an email by clicking the icon below:
+      </p>
+    </div>
+    <div class=mail>
+      <a href="mailto: worldwideunified@gmail.com" target="_blank"><img alt="letter" src="mail-icon.png" /></a>
+    </div>
+    <div class=github-prompt>
+      <p>Click the icon below in order to see the GitHub Repository for this website:</p>
+      <div class=git>
+        <a href="https://github.com/rperbichi/Startup.git" target="_blank"><img alt="GitHub"
+            src="GitHub-Logo.png" /></a>
       </div>
-      <div class = mail>
-        <a href = "mailto: worldwideunified@gmail.com" target="_blank"><img alt = "letter" src = "mail-icon.png"/></a>
-      </div>
-      <div class = github-prompt>
-        <p>Click the icon below in order to see the GitHub Repository for this website:</p>
-        <div class = git>
-          <a href = "https://github.com/rperbichi/Startup.git" target="_blank"><img alt = "GitHub" src = "GitHub-Logo.png"/></a>
-        </div>
-      </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>
