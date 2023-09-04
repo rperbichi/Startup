@@ -71,15 +71,15 @@ header nav :active {
     margin: 0;
 
     position: fixed;
-    inset: var(--header-height) 0 0 auto;
+    inset: var(--header-height) -230px 0 auto;
 
     font-size: 25px;
-    transform: translateX(100%);
+    transform: translateX(0);
     transition: var(--animation-duration);
   }
 
   header nav #check:checked ~ ul {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 
   header nav .checkbtn {
