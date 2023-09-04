@@ -1,0 +1,9 @@
+main {
+  padding: 1.25em
+}
+
+h1 {
+  font-size: 4em;
+  color: var(--green-dark-1);
+  text-decoration: underline;
+}
