@@ -8,6 +8,7 @@ body {
 }
 
 main {
+  padding: 1em;
   text-align: center;
 }
 
@@ -44,6 +45,12 @@ h5,
 h6 {
   font: var(--text-heading);
   text-transform: capitalize;
+}
+
+h1 {
+  font-size: 4em;
+  color: var(--green-dark-1);
+  text-decoration: underline;
 }
 
 h2 {
