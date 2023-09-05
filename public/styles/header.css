@@ -69,9 +69,10 @@ header nav :active {
     border-radius: 1.2em 0 0 1.2em;
     background-color: inherit;
     margin: 0;
+    min-width: 322px;
 
     position: fixed;
-    inset: var(--header-height) -230px 0 auto;
+    inset: var(--header-height) -322px 0 auto;
 
     font-size: 25px;
     transform: translateX(0);
