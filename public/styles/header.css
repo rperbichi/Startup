@@ -63,16 +63,17 @@ header nav :active {
 
 @media screen and (max-width: 59em) {
   header nav ul {
+    --nav-width: 322px;
     flex-flow: column;
     align-items: stretch;
 
     border-radius: 1.2em 0 0 1.2em;
     background-color: inherit;
     margin: 0;
-    min-width: 322px;
+    min-width: var(--nav-width);
 
     position: fixed;
-    inset: var(--header-height) -322px 0 auto;
+    inset: var(--header-height) calc(-1 * var(--nav-width)) 0 auto;
 
     font-size: 25px;
     transform: translateX(0);
