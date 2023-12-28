@@ -1,0 +1,25 @@
+:root {
+  --blue-dark-2: #0068be;
+  --blue-dark-1: #3366cc;
+  --blue-light-1: #1592e5;
+  --blue-light-2: #47a1fa;
+  --blue-light-3: #63c0ff;
+
+  --green-dark-1: #61b255;
+  --green-light-1: #b5df40;
+
+  --text-light: white;
+  --text-dark: #707070;
+  --text-placeholder: #8e8e8e;
+
+  --input-background-color: #f5f5f5;
+  --border-color: #ebebeb;
+  --border-color-focused: var(--blue-light-1);
+
+  --animation-duration: 0.25s;
+
+  --text-heading: 400 1em/1.15em "Lumiera", serif;
+  --text-body: 500 15px/1.46em "Josefin Sans", sans-serif;
+  --text-handwriting: 400 1em/1.33em "Lumiera", serif;
+  --text-button: 600 28px/1em Poppins, sans-serif;
+}

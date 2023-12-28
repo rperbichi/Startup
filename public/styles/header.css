@@ -1,0 +1,91 @@
+header {
+  --background-color: var(--blue-dark-2);
+  --header-height: 100px;
+}
+
+header nav {
+  display: flex;
+  flex-flow: row nowrap;
+
+  background-color: var(--background-color);
+}
+
+header nav #check {
+  display: none;
+}
+
+header nav .checkbtn {
+  display: none;
+  align-items: center;
+  order: 1;
+
+  margin-left: auto;
+
+  color: var(--blue-light-3);
+}
+
+header nav .checkbtn i {
+  font-size: 1.85em;
+  padding: 1.25em 1em;
+}
+
+header nav img {
+  max-height: var(--header-height);
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 0.875em;
+
+  list-style: none;
+}
+
+header nav :link,
+header nav :visited {
+  display: block;
+  padding: 1.3em 0.875em;
+
+  font-size: 1.25em;
+  color: var(--text-light);
+  text-decoration: none;
+  text-align: center;
+}
+
+header nav :active {
+  color: var(--light-green-1);
+}
+
+@media screen and (max-width: 59em) {
+  header nav ul {
+    --nav-width: 322px;
+    flex-flow: column;
+    align-items: stretch;
+
+    border-radius: 1.2em 0 0 1.2em;
+    background-color: inherit;
+    margin: 0;
+    min-width: var(--nav-width);
+
+    position: fixed;
+    inset: var(--header-height) calc(-1 * var(--nav-width)) 0 auto;
+
+    font-size: 25px;
+    transform: translateX(0);
+    transition: var(--animation-duration);
+  }
+
+  header nav #check:checked ~ ul {
+    transform: translateX(-100%);
+  }
+
+  header nav .checkbtn {
+    display: flex;
+    align-items: center;
+  }
+}
