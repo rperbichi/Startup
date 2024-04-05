@@ -1,0 +1,23 @@
+.intro {
+  max-width: 89rem;
+  padding-inline: 3rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.book img {
+  max-width: 16em;
+  width: 41vw;
+}
+
+main {
+  padding: 1em;
+}
+
+div.input {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  margin: auto;
+  justify-content: center;
+}

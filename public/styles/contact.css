@@ -1,0 +1,10 @@
+main a {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+main img {
+  display: block;
+  max-width: 4em;
+}

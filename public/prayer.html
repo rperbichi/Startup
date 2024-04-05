@@ -1,42 +1,46 @@
 <link rel="stylesheet" href="main.css" />
 <!DOCTYPE html>
-    <head>
+
+<head>
     <meta charset="UTF-8" />
     <!-- Tell browsers not to scale the viewport automatically -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Worldwide Unified</title> <!-- Gives the title that shows on tab -->
+    <link rel="stylesheet" href="./styles/global.css" />
     <script src="home.js" defer></script> <!-- Linking JavaScript -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!--switch href out for the WWU logo-->
     <link rel="icon" href="WWU logo.jpg" />
     <script src="login.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <img class="logo" alt = "Banner" src = "WWU banner.jpeg">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a alt="group link" href="https://www.facebook.com/groups/534352464165662/" target="_blank">Visit Group</a></li>
-                        <li><a href="devotionals.html">Devotionals</a></li>
-                        <li><a href="podcasts.html">Podcasts</a></li>
-                        <li><a href="allprayers.html">Prayer Requests</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-              </nav>
-        </header>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <img class="logo" alt="Banner" src="WWU banner.jpeg">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a alt="group link" href="https://www.facebook.com/groups/534352464165662/" target="_blank">Visit
+                        Group</a></li>
+                <li><a href="devotionals.html">Devotionals</a></li>
+                <li><a href="podcasts.html">Podcasts</a></li>
+                <li><a href="allprayers.html">Prayer Requests</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <!-- Calling the user by name -->
         <div class="user">
             Welcome
             <span class="user-name"></span>
-          </div>
+        </div>
         <!-- end calling the user by name -->
 
 
@@ -44,26 +48,26 @@
             <div class="book-description">
                 <h2>Enter the information below for the prayer request:</h2>
             </div>
-    
+
             <div class="input">
                 <input type="text" id="theName" placeholder="Who to pray for?" />
             </div>
-    
+
             <div class="input">
                 <input type="text" id="theInfo" placeholder="What are we praying for?" />
             </div>
-            
+
             <div class="input">
-                <button class="prayer-button" id ="prayer-button" onclick="sendPrayer()">Submit</button>
+                <button class="prayer-button" id="prayer-button" onclick="sendPrayer()">Submit</button>
             </div>
             <!-- <div class="input">
                 <button class="prayer-button" onclick="loadRequest()">Submit</button>
             </div> -->
         </form>
-    
-            <script>
-                
-            </script>
+
+        <script>
+
+        </script>
     </main>
 
 
@@ -74,5 +78,6 @@
 
     <script src="prayer.js"></script>
     <script src="script.js" defer></script>
-    </body>
+</body>
+
 </html>
